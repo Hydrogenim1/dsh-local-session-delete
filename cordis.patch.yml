@@ -1,0 +1,4 @@
+# Mount the local delete-session plugin (host half + client bundle).
+- insert:
+    - id: dsh-local-session-delete
+      name: dsh-local-session-delete

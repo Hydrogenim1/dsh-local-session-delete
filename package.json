@@ -1,0 +1,33 @@
+{
+  "name": "dsh-local-session-delete",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local DSH plugin: adds a Delete session action to the sidebar session row menu",
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hydrogenim1/dsh-local-session-delete.git"
+  },
+  "homepage": "https://github.com/Hydrogenim1/dsh-local-session-delete#readme",
+  "bugs": {
+    "url": "https://github.com/Hydrogenim1/dsh-local-session-delete/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-context-menu"
+      ]
+    }
+  },
+  "license": "MIT"
+}
